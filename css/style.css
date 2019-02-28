@@ -1,0 +1,282 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+ /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+body{
+	width: 65rem;
+    margin: 0 auto;
+	align-items:center;
+	padding :0 1em;
+	
+}
+
+header{
+	background-image: url('../images/bkg.jpg');
+	display :flex;	
+	border:2px solid #333;
+    
+}
+
+header img{
+	width:20%;
+	height:20%;
+}
+
+.clearfix:before, .clearfix:after{
+     content: "";
+     display: table;
+}
+.clearfix:after{
+     clear: both;
+}
+a{
+     color:#0067ab;
+     text-decoration:none;
+}
+a:hover{
+     text-decoration:underline;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]
+{
+    width: 50%;
+    padding: 0.8em;
+    border: 0.15em solid #333; 
+	border-radius:0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;	
+	display: inline-block;
+    vertical-align: baseline; 
+	font-size:1em;	
+	font-weight:bold;
+	color:#333;
+}
+
+input[type=submit],
+input[type=reset]
+{
+	padding:0.5em;
+    font-weight: bold;
+	margin:0.8em;
+	font-size:1.3em;
+	color:#fff;
+	background-color:#333;
+	border:3px solid #333;;	
+	border-radius:0.5em;
+	width:15%;	
+}
+
+input[type=reset]:hover ,input[type=submit]:hover{
+    background-color: #A0522D;
+}
+
+label{
+	font-size:1.5em;
+	margin:0.5em 0.5em;		
+	color:#333;
+	font-weight:bold;
+	display: inline-block;
+    vertical-align: baseline;
+	width :16.8%;
+}
+
+/* LOGIN FORM */
+.logform{
+	background-image: url('../images/bkg.jpg');
+	background-size: 100% 100%;
+	padding:2em;
+	border:2px solid black;	
+	height:100%;
+    text-align: center;
+}
+
+.logform-border, .regform-border
+{
+	border:2px solid white;	
+	padding:0.8em;
+    height: 50%;
+	border-radius:0.8em;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    height: 5px;
+    color: #333;
+    background-color: #333;    
+}
+
+.logform h3{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 0.5em;
+}
+
+.logform h2{
+    padding-top: 0.3em;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.logform p{
+    font-size: 1.3em;
+    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.logform-border p{
+    text-align: center;
+}
+
+/* Registration Form */
+.regform{
+	background-image: url('../images/bkg.jpg');
+	background-size: 100% 100%;
+	padding:3em;
+	border:2px solid black;
+    text-align: center;
+    float:center;
+}
+
+.regform h3{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white; 
+    padding-bottom: 0.5em;    
+}
+
+.select-options{
+    margin-left: -11em;
+}
+
+select{
+    padding: 0.8em;
+    border: 0.15em solid #333; 
+	border-radius:0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;	
+	display: inline-block;
+    vertical-align: baseline; 
+	font-size:1em;	
+	font-weight:bold;  
+}
+
+select[name=country]{
+    width: 22%;
+}
+
+/* POLL */
+.pollform, .pollsform{
+	background-image: url('../images/bkg.jpg');
+	background-size: 100% 100%;
+	padding:2em;
+	border:2px solid black;	
+	height:100%;
+    text-align: center;
+}
+
+.pollsform h2, .pollform h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* RADIO BUTTONS */
+
+.radvalue{
+	font-size:1.2em;	
+	color:#333;	
+}
+
+input[type=radio]
+{ 
+  height: 1em;
+  width: 1em; 
+  margin-top: -1px;
+  vertical-align: middle;
+  padding-right: 1.2em;
+}
+span{
+	color:red;
+}
+
+
+/* IMAGES */
+
+#banner{
+	width:100%;    
+}
+
+#intro-image{
+    width: 40%;
+    float: right;
+    padding: 0.5em 1em 1em 1.4em;
+
+}
+
+
+/* POLLS */
+#poll-listings ul li{
+    padding: 1em;
+    border: 1px solid #333;
+}
+
+.poll-question{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.poll-options{
+    margin-bottom: 10px;
+    display:inline-block;
+    width: 50em;
+}
+
+.poll-option {
+  margin-bottom: 10px;
+
+}
+
+.poll-options label{
+    width: 80%;
+}
+
+.poll-option input[type=radio]{
+    margin-left: -4em;
+}
+
+.result-table{
+    text-align: left;
+}
+
+.result-table td{
+    padding-right: 1em;
+}
+
+.result-table h2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
